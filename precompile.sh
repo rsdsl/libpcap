@@ -14,8 +14,8 @@ echo "Building for x86_64"
 	--without-libnl
 make -j$(nproc)
 
-mkdir -p x86_64
-cp -v libpcap.a x86_64/libpcap.a
+mkdir -p out/x86_64
+cp -v libpcap.a out/x86_64/libpcap.a
 
 make clean
 
@@ -35,8 +35,8 @@ echo "Building for rpi"
 	--without-libnl
 make -j$(nproc)
 
-mkdir -p rpi
-cp -v libpcap.a rpi/libpcap.a
+mkdir -p out/rpi
+cp -v libpcap.a out/rpi/libpcap.a
 
 make clean
 
