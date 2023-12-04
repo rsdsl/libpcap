@@ -10,6 +10,7 @@ echo "Building for x86_64"
 	--disable-shared \
 	--host x86_64-unknown-linux-musl \
 	--enable-ipv6
+	--without-libnl
 make -j$(nproc)
 
 mkdir -p x86_64
@@ -29,6 +30,7 @@ echo "Building for rpi"
 	--disable-shared \
 	--host aarch64-unknown-linux-musl \
 	--enable-ipv6
+	--without-libnl
 make -j$(nproc)
 
 mkdir -p rpi
