@@ -9,7 +9,7 @@ echo "Building for x86_64"
 ./configure CC=musl-gcc \
 	--disable-shared \
 	--host x86_64-unknown-linux-musl \
-	--enable-ipv6
+	--enable-ipv6 \
 	--without-libnl
 make -j$(nproc)
 
@@ -29,7 +29,7 @@ echo "Building for rpi"
 ./configure CC=aarch64-linux-musl-gcc \
 	--disable-shared \
 	--host aarch64-unknown-linux-musl \
-	--enable-ipv6
+	--enable-ipv6 \
 	--without-libnl
 make -j$(nproc)
 
