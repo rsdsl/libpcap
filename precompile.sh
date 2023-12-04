@@ -6,7 +6,8 @@
 
 echo "Building for x86_64"
 
-./configure CC=musl-gcc \
+./configure \
+	CC=musl-gcc \
 	--disable-shared \
 	--host x86_64-unknown-linux-musl \
 	--enable-ipv6 \
@@ -26,7 +27,8 @@ echo "Built x86_64"
 
 echo "Building for rpi"
 
-./configure CC=aarch64-linux-musl-gcc \
+./configure \
+	CC=aarch64-linux-musl-gcc \
 	--disable-shared \
 	--host aarch64-unknown-linux-musl \
 	--enable-ipv6 \
