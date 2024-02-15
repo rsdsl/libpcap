@@ -2087,6 +2087,7 @@ static int map_arphrd_to_dlt(pcap_t *handle, int arptype,
 	/* Not sure if this is correct for all tunnels, but it
 	 * works for CIPE */
 	case ARPHRD_TUNNEL:
+	case ARPHRD_TUNNEL6:
 #ifndef ARPHRD_SIT
 #define ARPHRD_SIT 776	/* From Linux 2.2.13 */
 #endif
